@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "./logo";
 
 import Image from "../components/image";
+import Navigation from "../components/navigation";
 
 import style from "./../config/styles";
 
@@ -11,7 +12,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       fontFamily: style.font.FAMILY,
-      background: style.color.background,
+      background: style.color.BACKGROUND,
       marginBottom: style.spacing.DEFAULT,
       borderBottomStyle: `solid`,
       borderBottomWidth: `1px`,
@@ -32,8 +33,9 @@ const Header = ({ siteTitle }) => (
           style={{
             position: `absolute`,
             top: 0,
+            left: 0,
             display: `block`,
-            padding: `2rem 1rem`,
+            padding: `2rem`,
             color: style.color.WHITE,
             textDecoration: `none`,
             fontFamily: style.font.FAMILY,
@@ -43,6 +45,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        <Navigation />
       </h1>
     </div>
   </header>
