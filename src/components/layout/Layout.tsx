@@ -9,8 +9,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
-import "./layout.css";
+import { Header } from "../../components";
+
+import styles from "./Layout.module.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main
+          className={styles.main}
           style={{
             borderStyle: `solid`,
             borderWidth: `1px`,

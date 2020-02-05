@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "gatsby";
 
-import Layout from "../components/layout";
+import { Layout } from "../components";
 import SEO from "../components/seo";
 
 const IndexPage = () => (
@@ -11,7 +11,7 @@ const IndexPage = () => (
     <h1>lorem ipsum</h1>
     <p>Welcome to your new Gatsby site.</p>
 
-    <Link to="/page-2/">Go to page 2</Link>
+    <Link to="/work">Some of our work</Link>
   </Layout>
 );
 
