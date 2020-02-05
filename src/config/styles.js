@@ -3,13 +3,16 @@
  * Provides universal fonts used in the app.
  */
 const AppStyles = {
+  font: {
+    FAMILY: `sans-serif`
+  },
   color: {
-    BLACK: "#000000",
-    WHITE: "#FFFFFF",
-    BACKGROUND: "#f6f8fa"
+    BLACK: `#000000`,
+    WHITE: `#FFFFFF`,
+    BACKGROUND: `#f6f8fa`
   },
   spacing: {
-    DEFAULT: "1rem"
+    DEFAULT: `1rem`
   }
 };
 

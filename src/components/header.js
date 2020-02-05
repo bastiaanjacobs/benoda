@@ -3,11 +3,14 @@ import PropTypes from "prop-types";
 import React from "react";
 import Logo from "./logo";
 
+import Image from "../components/image";
+
 import style from "./../config/styles";
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
+      fontFamily: style.font.FAMILY,
       background: style.color.background,
       marginBottom: style.spacing.DEFAULT,
       borderBottomStyle: `solid`,
@@ -15,6 +18,7 @@ const Header = ({ siteTitle }) => (
       borderBottomColor: `#d1d5da`
     }}
   >
+    <Image />
     <div
       style={{
         margin: `0 auto`,
@@ -26,11 +30,15 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
+            position: `absolute`,
+            top: 0,
             display: `block`,
-            padding: `1rem`,
-            color: `#111`,
+            padding: `2rem 1rem`,
+            color: style.color.WHITE,
             textDecoration: `none`,
-            fontSize: `1rem`
+            fontFamily: style.font.FAMILY,
+            fontSize: `1.25rem`,
+            letterSpacing: 1
           }}
         >
           {siteTitle}
