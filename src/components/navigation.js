@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "gatsby";
+
 import style from "./../config/styles";
 
 const navigationStyle = {
@@ -15,13 +17,13 @@ const navigationStyle = {
 
 const Navigation = () => {
   return (
-    <section style={navigationStyle}>
+    <nav style={navigationStyle}>
       <ul>
-        <li>work</li>
-        <li>about</li>
-        <li>contact</li>
+        <Link to="/work">work</Link>
+        <Link to="/about">about</Link>
+        <Link to="/contact">contact</Link>
       </ul>
-    </section>
+    </nav>
   );
 };
 
