@@ -5,3 +5,5 @@
  */
 
 // You can delete this file if you're not using it
+
+const blogPost = path.resolve(`./src/templates/blog-post.tsx`)

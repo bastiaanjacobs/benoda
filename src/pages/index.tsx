@@ -1,18 +1,43 @@
-import React from 'react'
+import * as React from 'react'
+import Link from 'gatsby-link'
 
-import { Link } from 'gatsby'
+// Please note that you can use https://github.com/dotansimha/graphql-code-generator
+// to generate all types from graphQL schema
+interface IndexPageProps {
+  data: {
+    site: {
+      siteMetadata: {
+        title: string
+      }
+    }
+  }
+}
 
-import { Layout } from '../components'
-import SEO from '../components/seo'
+export default class extends React.Component<IndexPageProps, {}> {
+  constructor(props: IndexPageProps, context: any) {
+    super(props, context)
+  }
+  public render() {
+    return (
+      <div>
+        <h1>Hi people</h1>
+        <p>
+          Welcome to your new{' '}
+          <strong>{this.props.data.site.siteMetadata.title}</strong> site.
+        </p>
+        <p>Now go build something great.</p>
+        <Link to="/page-2/">Go to page 2</Link>
+      </div>
+    )
+  }
+}
 
-const IndexPage = () => (
-    <Layout>
-        <SEO title="Home" />
-        <h1>lorem ipsum</h1>
-        <p>Welcome to your new Gatsby site.</p>
-
-        <Link to="/work">Some of our work</Link>
-    </Layout>
-)
-
-export default IndexPage
+export const pageQuery = graphql`
+  query IndexQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
