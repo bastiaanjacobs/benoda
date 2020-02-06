@@ -1,5 +1,0 @@
-/packages/*/dist
-/packages/*/coverage
-/packages/*/node_modules
-/packages/*/locales/_build
-/storybook-static
