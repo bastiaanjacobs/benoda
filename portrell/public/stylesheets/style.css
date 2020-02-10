@@ -12,8 +12,15 @@ footer {
 }
 
 .content-section {
-  max-width: 70%;
   margin-bottom: 3.75rem;
+}
+
+.content-section:nth-child(odd) {
+  max-width: 70%;
+}
+.content-section:nth-child(even) {
+  padding: 3rem 3rem 3rem 30%;
+  background-color: #f6f7f9;
 }
 
 /* Header */
@@ -201,10 +208,12 @@ footer {
   font-size: 16px;
   font-style: italic;
   text-align: center;
+  max-width: 100%;
+  background: #f6f7f9;
+  margin-top: 6rem;
 }
 footer p {
-  border-top: 1px solid #dadada;
-  padding: 2rem 0;
+  padding: 4rem 0;
   margin-bottom: 0;
 }
 footer a {
