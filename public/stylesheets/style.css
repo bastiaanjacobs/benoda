@@ -30,7 +30,6 @@ footer {
 .site-header,
 .site-header a {
   color: #484d52;
-  font-weight: 700;
 }
 .site-header nav a:hover {
   color: #72767b;
@@ -102,16 +101,14 @@ footer {
 }
 .banner-title {
   color: #111111;
-  font-size: 46px;
-  font-weight: 900;
-  line-height: 70px;
+  font-size: 40px;
+  line-height: 60px;
 }
 .banner-button {
   background: #5163ba;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
-  font-weight: 700;
   padding: 15px 40px;
   box-shadow: 0 4px 2px 0 rgba(175, 146, 146, 0.1);
 }
@@ -139,7 +136,7 @@ footer {
 }
 .quote blockquote {
   display: block;
-  font-family: "Lora", Serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: italic;
   font-weight: normal;
@@ -153,7 +150,7 @@ footer {
 .quote blockquote:after {
   color: #e9e9e9;
   content: open-quote;
-  font-family: "Lora", Serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   font-weight: 900;
   line-height: 0.1em;
