@@ -13,7 +13,8 @@
  */
 body {
   color: #72767b;
-  font: 14px "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   letter-spacing: 0.4;
   line-height: 28px;
 }
@@ -33,10 +34,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 42px;
   font-weight: normal;
   color: #484d52;
