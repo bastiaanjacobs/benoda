@@ -15,14 +15,6 @@ footer {
   margin-bottom: 3.75rem;
 }
 
-.content-section:nth-child(odd) {
-  max-width: 70%;
-}
-.content-section:nth-child(even) {
-  padding: 3rem 3rem 3rem 30%;
-  background-color: #f6f7f9;
-}
-
 /* Header */
 .site-header {
   padding: 1rem 0;
@@ -105,11 +97,12 @@ footer {
   line-height: 60px;
 }
 .banner-button {
+  display: inline-flex;
   background: #5163ba;
   border-radius: 3px;
   color: #ffffff;
   font-size: 14px;
-  padding: 15px 40px;
+  padding: 10px 40px;
   box-shadow: 0 4px 2px 0 rgba(175, 146, 146, 0.1);
 }
 .banner-button:hover {
