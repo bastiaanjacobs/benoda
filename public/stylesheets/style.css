@@ -221,6 +221,12 @@ footer a {
   width: 30px;
   margin-top: 10px;
 }
+.bottom-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  text-align: left;
+}
 
 /* 404 error page */
 .not-found {
