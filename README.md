@@ -1,4 +1,5 @@
 [![Dependency Status](https://david-dm.org/raulg/reactjs-website.svg)](https://david-dm.org/raulg/reactjs-website)
+[![Build Status](https://travis-ci.org/bastiaanjacobs/benoda.svg?branch=master)](https://travis-ci.org/bastiaanjacobs/benoda)
 
 # Prismic React Site Example
 
